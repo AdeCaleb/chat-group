@@ -1,0 +1,514 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(52, 52, 61);
+    color: white;
+    margin: 0;
+}
+
+main{
+    display: flex;
+}
+
+main .content-left{
+    background-color: rgb(22, 21, 21);
+    height: 100vh;
+    width: 261px;
+    
+}
+
+
+#btn_close{
+    display: none;
+}
+
+
+
+span label,main .content-left .content-left-nav svg{
+    background-color: rgb(52, 52, 61);
+    padding: 10px;
+    border-radius: 5px;
+}
+main .content-right{
+   
+    width: 100%;
+}
+.name_group{
+    padding: 22px;
+
+}
+
+
+.content-left-main form{
+    margin: 12px;
+  
+}
+
+.content-left-main form input{
+    height: 40px;
+    background-color: rgb(52, 52, 61);
+    border-radius: 5px;
+    padding-left: 33px;
+    border: none;
+}
+main .content-left .content-left-nav{
+
+    background-color: rgb(22, 21, 21);
+    box-shadow: 0px 0px 5px 0px rgba(8, 8, 8, 0.863);
+    height: 18px;
+    padding:24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main .content-left .content-left-nav svg{
+    width: 13px;
+    height: 13px;
+    position: relative;
+    top: -2px;
+
+}
+
+.message{
+    height: 480px;
+    position: relative;
+    top: 34px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    overflow: auto;
+}
+
+.separ{
+    display: flex;
+    color: rgb(137, 137, 138);
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+    margin-left: 23px;
+    border: none;
+    background-color: rgb(74, 74, 75);
+}
+
+.hrLeft{
+    margin-left: 0px;
+    margin-right: 23px;
+}
+
+img{
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+}
+.message::-webkit-scrollbar{
+   display: none;
+   
+}
+
+.par_m{
+    background-color: rgb(32, 32, 34);
+    box-shadow: 0px 0px 23px 0px rgb(32, 32, 34);
+    position: fixed;
+    border-radius: 5px;
+    padding: 10px;
+    bottom: 50px;
+    left: 154px;
+    display: none;
+    animation: slidetop 1s linear;
+
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #fff;
+}
+
+@keyframes slidetop {
+
+    from{
+        transform: translateY(-23px);
+
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+    
+}
+
+.message-amis{
+    display: flex;
+    margin-bottom: 23px;
+}
+
+.messageDate{
+    margin-left: 10px;
+}
+
+.message-amis span{
+    color: rgb(137, 137, 138);
+}
+
+
+.atif_group{
+    background-color:rgb(137, 137, 138) ;
+}
+
+
+.param{
+    height: 54px;
+    width: 237px;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(41, 39, 39);
+    box-shadow: 0px 0px 23px 0px rgb(32, 32, 34);
+    position: fixed;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    overflow: hidden;
+   
+}
+
+.param svg{
+
+    background-color: transparent;
+    top: 1px;
+}
+
+.message-amis-right{
+    margin-left: 23px;
+}
+.message::-webkit-scrollbar-thumb{
+    background-color: rgb(10, 10, 10);
+    border-radius: 30px;
+   
+}
+
+.champ_input{
+    position: fixed;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.champ_input form {
+    width: 100%;
+}
+
+.champ_input form #message{
+
+    width: 70%;
+    border-radius: 6px;
+    padding: 12px;
+    height: 33px;
+    background-color:rgb(52, 52, 61);
+    box-shadow: 0px 0px 23px 0px rgb(32, 32, 34);
+    border: none;
+
+}
+
+svg{
+    width: 26px;
+    height: 48px;
+    padding: 5px;
+    position: relative;
+    top: 23px;
+    left: -8px;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    background-color: rgb(7, 175, 253);
+    cursor: pointer;
+}
+
+input{
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+    outline: none;
+  
+}
+
+
+.search_icon{
+    position: absolute;
+    background-color: transparent;
+    width: 19px;
+    left: 18px;
+    top: 70px;
+
+}
+
+
+
+main .content-right .content-right-nav{
+    background-color:rgb(52, 52, 61);
+    box-shadow: 0px 0px 23px 0px rgb(32, 32, 34);
+    padding: 24px;
+}
+
+main .content-right .contener{
+    margin: 0px 22px 0px 22px;
+}
+
+
+
+section.boite_add_group{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #1d1b1b77;
+    align-items: center;
+    justify-content: center;
+    animation: oppenaddGroup 0.2s linear;
+    display: none;
+}
+
+@keyframes oppenaddGroup {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes closeaddGroup {
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+section.boite_add_group form{
+    background-color: rgb(52, 52, 61);
+    padding: 23px;
+    border-radius: 12px;
+    position: absolute;
+}
+
+section.boite_add_group form div{
+    display: grid;
+}
+
+section.boite_add_group form div input{
+
+    margin-bottom: 13px;
+    padding: 10px;
+    color: black;
+
+}
+
+.d-flex{
+    display: flex;
+}
+
+
+.input_mobile{
+    display: none;
+}
+
+section.boite_add_group form div input[type='submit']{
+    cursor: pointer;
+}
+
+#menu_responsive{
+    display: none;   
+}
+
+@media screen and (max-width:900px){
+    #menu_responsive{
+        display: block;
+        background-color: transparent;
+        position: relative;
+        top: -2px;
+    }
+
+    .content-right-nav{
+
+        height:18px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+
+    }
+
+ 
+
+    .content-right-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .param svg{
+        position: relative;
+        left: -10vw;
+    }
+
+    .content-left{
+
+        display: none;
+        z-index: 2000;
+       
+    }
+
+    #btn_close{
+        display: block;
+    }
+
+    main .content-left{
+        position: absolute;
+        background-color: rgb(22, 21, 21);
+        height: 100%;
+        width: 100vw;
+        z-index: 3000;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        
+    }
+
+
+    .param{
+        width: 100vw;
+        padding: 23px;
+    }
+
+    @keyframes animNavmobile {
+        from{
+            transform: translateX(-1233px);
+        }
+
+
+        to{
+            transform: translateX(0);
+        }
+    }
+
+
+    @keyframes animNavmobileClose {
+        from{
+            transform: translateX(0);
+        }
+
+
+        to{
+         
+            transform: translateX(-1233px);
+        }
+    }
+
+    .input_desktop{
+        display: none;
+    }
+
+
+    .input_mobile{
+        display: block;
+        width: 100%;
+        position: fixed;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+
+    }
+
+    .boite_add_group{
+        z-index: 4000;
+    }
+
+    .form_add_group{
+        z-index: 6000;
+    }
+
+
+    .input_mobile form{
+        width: 100vw;
+        position: relative;
+        top: 3px;
+    }
+
+    .input_mobile form textarea{
+        width: 85%;
+        height: 37px;
+        outline: none;
+        background-color: rgb(52, 52, 61);
+        border-radius: 10px;
+        border: solid rgb(76, 76, 83) 2px;
+        border-top-right-radius:0px;
+        border-bottom-right-radius:0px;
+        padding: 10px;
+        color: aliceblue;
+    }
+
+
+    .input_mobile form svg{
+        position: relative;
+        width: 26px;
+        top: -2px;
+    }
+    .contener{
+        padding-top: 64px;
+        padding-bottom: 84px;
+    }
+
+
+  
+
+
+
+
+    
+
+
+}
+
+@media screen and (max-width:430px){
+    .input_mobile form{
+        width: 100vw;
+        position: relative;
+        top: 0px;
+    }
+
+    .input_mobile form textarea{
+        width: 81%;
+        height: 35px;
+        outline: none;
+        background-color: rgb(52, 52, 61);
+        border-radius: 10px;
+        border: solid rgb(76, 76, 83) 2px;
+        border-top-right-radius:0px;
+        border-bottom-right-radius:0px;
+        padding: 10px;
+        color: aliceblue;
+    }
+
+
+    .input_mobile form svg{
+        position: relative;
+        width: 30px;
+        height: 49px;
+        top: 0px;
+    }
+    .contener{
+        padding-top: 64px;
+        padding-bottom: 84px;
+    }
+}
